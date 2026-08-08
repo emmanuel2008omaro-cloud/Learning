@@ -1,0 +1,37 @@
+.busqueda {
+  border: solid black 1px;
+  padding: 10px;
+  width: 250px;
+  /* height: 500px; */
+  overflow: hidden;
+}
+
+#lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4px;
+  height: 500px;
+}
+
+li {
+  border: solid black 1px;
+  padding: 10px;
+  color: blue;
+}
+
+li:hover{
+  background: linear-gradient(to left, blue 95%,dodgerblue,white);
+  color: white;
+}
+
+main{
+  display: flex;
+
+}
+
+aside{
+  background-color: white;
+}

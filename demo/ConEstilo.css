@@ -1,0 +1,54 @@
+body {
+    background: url("..IMG/textura-madera.jpg") repeat fixed;
+}
+
+img {
+    border: none;
+}
+
+.sobre {
+    width: 1010px;
+    height: 505px;
+    margin-top: 64px;
+}
+
+#sello {
+    position: absolute;
+    top: 150px;
+    left: 750px;
+    z-index: 1;
+    height: 130px;
+    width: 153px;
+}
+
+.envio{
+    background-color: #FFF8E7;
+    font-size: 18px;
+    color: #2336B3;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2em;
+}
+
+#envio{
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    width: 512px; 
+    height: 220px; 
+    z-index: 2;
+}
+
+.destinatarioCarta{
+    padding: 1em;
+    position: absolute;
+    top: 350px; 
+    left: 400px; 
+    z-index: 1;
+}
+
+input:focus{
+    border: 1px solid blue;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtro de búsqueda básico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <main>
+    <aside class="busqueda">
+    <h1>Filtro básico</h1>
+    <input type="text" id="input" placeholder="Escribe algo para buscar" autofocus />
+    <ul id="lista"></ul>
+  </aside>
+
+  <div>
+    <input type="text" list="numero">
+    <datalist id="numero">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </datalist>
+  </div>
+  </main>
+  
+  <script src="app.js"></script>
+  
+</body>
+</html>

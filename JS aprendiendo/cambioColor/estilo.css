@@ -1,0 +1,41 @@
+:root{
+  --random-color:"#ffffff";
+}
+@font-face {
+  font-family: "Lobster";
+  src: url(./fuentes/Lobster.otf);
+}
+body{
+  scroll-behavior: smooth;
+}
+
+.cont-titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Lobster" ;
+  font-size: 20px;
+  
+}
+
+.titulo{
+  border: solid black 5px;
+  padding: 100px;
+  background-color: var(--random-color);
+}
+
+.Random-btn{
+  height: 50px;
+  width: 50px;
+  background-color: var(--random-color);
+  border-radius: 100px;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  transition: 0.3s;
+}
+
+.Random-btn:hover{
+  transform: translateY(-15px);
+  box-shadow: 0px 10px 15px grey;
+}

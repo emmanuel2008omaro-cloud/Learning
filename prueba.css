@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(98, 0, 255);
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(45deg, #ff9900, #ff007f); /* Los colores de tu texto */
+    -webkit-background-clip: text; /* Recorta el degradado con la forma de las letras */
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+    box-shadow: #ffae00 0px 10px 15px;
+}
+
+h1:hover{
+    text-shadow: 0 0 20px rgba(255, 81, 0, 0.9);
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Estilo general para TODOS los botones */
+.btn {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); 
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+:where(.btn-btn2, .btn-btn4, .btn-btn6, .btn-btn8, .btn-btn10) {
+    background-color: black;
+    color: aliceblue;
+    border: ridge black 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+@media (min-width: 1068px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        gap: 40px;
+    }
+    .btn{
+        width: 100%;
+        padding:100px;
+    }
+    .btn:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+    box-shadow: #ffae00 0 20px 25px;
+    }
+}

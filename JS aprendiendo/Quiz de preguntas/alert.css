@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "DropShade";
+  src: url(../cambioColor/fuentes/DropShade/DropShade-Outline.ttf);
+}
+
+html {
+  height: 100%; 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 80px;
+}
+
+.logo:hover{
+  color: gold;
+}
+
+.border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:dotted white 4px;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.border:hover{
+  border:dotted gold 4px;
+}
+
+.quiz-container{
+  margin-left: 20px;
+}
+
+#alerta {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  background: white;
+  font-size: 24px;
+  animation: aparecer 0.3s ease;
+  transition: 1s;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#opciones{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-start;
+  gap: 10px;
+}
+  
+button{
+  width: 300px;
+  margin-left: 50px;
+  font-size: 15px;
+  background-color: aqua;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.logo{
+  font-size: 26px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;      
+  padding: 0;  
+  font-family: "DropShade";
+}
+
+p{
+  display: flex;
+  align-self: baseline;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 0;  
+  font-size: 10px;     
+}
+
+#mensaje{
+  font-size: 30px;
+}
+
+.nigeria{
+  background: linear-gradient(to right,green, white,green);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.america{
+  background-image: url('https://img.magnific.com/fotos-premium/america-sur_1134901-151920.jpg?semt=ais_hybrid&w=740&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.huesos{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmgxwSRaCsAF5GU008IeHLtjZLby_tQm096OSwQGxrkeSB4qS9In9V0xt&s=10');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.quijote{
+  background-image: url('ChatGPT\ Image\ 21\ jul\ 2026\,\ 17_53_01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centro{
+  position: absolute;
+  top: 44%;
+  left: 39%;
+  font-family: Arial, Helvetica, sans-serif;
+}
